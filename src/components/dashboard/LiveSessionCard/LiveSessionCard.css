@@ -1,0 +1,156 @@
+.live-session{
+  background:#EFF1F9;
+
+  border-radius:14px;
+
+  padding:18px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  position:relative; /* important */
+}
+
+/* LEFT SECTION */
+
+.live-left{
+
+  display:flex;
+
+  gap:14px;
+
+  align-items:center;
+
+}
+
+.video-icon{
+  width:46px;
+  height:46px;
+
+  background:#155DFC;
+
+  border-radius:12px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.video-icon img{
+  width:20px;
+}
+
+.video-icon img{
+
+  width:20px;
+
+}
+
+/* TEXT */
+
+.live-info h4{
+  font-size:16px;
+  font-weight:600;
+  margin-bottom:2px;
+}
+
+.live-info p{
+  font-size:13px;
+  color:#777;
+  margin-bottom:2px;
+}
+
+.live-info span{
+
+  font-size:12px;
+
+  color:#999;
+
+}
+
+/* META INFO */
+
+.live-meta{
+  display:flex;
+  align-items:center;
+  gap:16px;
+
+  margin-top:6px;
+
+  font-size:12px;
+  color:#777;
+}
+
+.live-meta img{
+  width:14px;
+  height:14px;
+}
+
+/* RIGHT SIDE */
+
+.live-right{
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:flex-end;
+
+  gap:8px;
+
+}
+
+.live-badge{
+
+  position:absolute;
+
+  top:-8px;      /* pushes badge outside the card */
+  right:20px;
+
+  background:#BA2020;
+
+  color:white;
+
+  font-size:12px;
+
+  padding:4px 10px;
+
+  border-radius:12px;
+
+}
+
+.join-btn{
+
+  background:#2F6FED;
+
+  color:white;
+
+  border:none;
+
+  border-radius:20px;
+
+  padding:6px 16px;
+
+  display:flex;
+
+  align-items:center;
+
+  gap:6px;
+
+  cursor:pointer;
+
+}
+
+.join-btn img{
+
+  width:14px;
+
+}
+
+
+.live-meta span{
+  display:flex;
+  align-items:center;
+  gap:5px;
+}

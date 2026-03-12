@@ -1,0 +1,68 @@
+.stat-card {
+    width: 258px;
+    height: 140px;
+
+    border-radius: 20px;
+
+    padding: 16px 20px;
+
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.195);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stat-top {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.icon-box{
+
+  width:36px;
+  height:36px;
+  border-radius:10px;
+  background: #EFF1F9;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.195);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+}
+
+.icon-box img{
+  width: 18px;
+}
+
+.badge{
+
+  background:#EDEFF4;
+
+  color:#000000;
+
+  font-size:12px;
+
+  padding:4px 10px;
+
+  border-radius:20px;
+
+}
+
+.stat-title{
+  font-size:14px;
+  color:#4D4747;
+}
+
+.stat-value {
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    color: #333;
+
+}

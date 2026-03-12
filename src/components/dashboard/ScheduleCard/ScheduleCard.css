@@ -1,0 +1,61 @@
+.schedule-card{
+
+  background:#F4F6FB;
+
+  border-radius:14px;
+
+  padding:14px 16px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+}
+
+/* LEFT SECTION */
+
+.schedule-left{
+
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+}
+
+/* ICON BOX */
+
+.schedule-icon{
+
+  width:40px;
+  height:40px;
+
+  border-radius:10px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+}
+
+.schedule-icon img{
+  width:18px;
+}
+
+/* TEXT */
+
+.schedule-info h4{
+  font-size:14px;
+  font-weight:600;
+}
+
+.schedule-info span{
+  font-size:12px;
+  color:#888;
+}
+
+/* TIME */
+
+.schedule-time{
+  font-size:12px;
+  font-weight:400;
+}
