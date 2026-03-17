@@ -10,11 +10,27 @@
   align-items:center;
 }
 
-.add-btn{
-  background:black;
-  color:#fff;
-  padding:8px 14px;
-  border-radius:8px;
+.add-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.add-btn:hover {
+  opacity: 0.85;   
+}
+
+.add-btn svg {
+  flex-shrink: 0;
 }
 
 .courses-controls {

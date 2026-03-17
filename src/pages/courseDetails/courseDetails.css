@@ -1,0 +1,269 @@
+/* ===== LAYOUT ===== */
+
+.course-page {
+  display: flex;
+  gap: 24px;
+  padding: 24px 80px;
+  align-items: flex-start;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  width: 240px;
+  background: #f8f9fb;
+  border-radius: 12px;
+  padding: 20px 16px;
+  height: fit-content;
+}
+
+.sidebar-item {
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+}
+
+.sidebar-item.active {
+  background: #eaf1ff;
+  color: #155DFC;
+  font-weight: 500;
+}
+
+/* MAIN CONTENT */
+
+.course-main {
+  flex: 1;
+  width: 100%;
+}
+
+.course-details {
+  width: 100%;
+}
+
+/* ===== HEADER ===== */
+
+.course-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.title-section {
+  flex: 1;
+  margin-left: 12px;
+}
+
+.title-section h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.breadcrumb {
+  font-size: 13px;
+  color: #8a8a8a;
+  margin-top: 4px;
+}
+
+/* BUTTONS */
+
+.back-btn {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  cursor: pointer;
+}
+
+.add-module-btn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid #155DFC;
+  color: #155DFC;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* ===== TABS ===== */
+
+.tabs {
+  display: flex;
+  gap: 24px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+.tabs span {
+  padding-bottom: 10px;
+  cursor: pointer;
+  color: #666;
+  font-size: 14px;
+}
+
+.tabs .active {
+  color: #155DFC;
+  border-bottom: 2px solid #155DFC;
+  font-weight: 500;
+}
+
+/* ===== MODULE CARD ===== */
+
+.module-card {
+  width: 100%;
+  background: #f8f9fb;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* HEADER */
+
+.module-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.module-header h4 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.module-header p {
+  font-size: 12px;
+  color: #999;
+}
+
+.collapse-icon {
+  cursor: pointer;
+}
+
+/* ===== MODULE TITLE ===== */
+
+.module-title-row {
+  margin-top: 15px;
+}
+
+.module-title-row label {
+  font-size: 13px;
+  color: #777;
+}
+
+.title-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.title-input input {
+  flex: 1;
+}
+
+/* ===== INPUTS ===== */
+
+input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  background: #ffffff;
+  font-size: 14px;
+}
+
+/* ===== TABLE HEADER ===== */
+
+.topic-header {
+  display: grid;
+  grid-template-columns: 40px 1fr 1.5fr 60px;
+  gap: 16px;
+  align-items: center;
+
+  font-size: 13px;
+  font-weight: 500;
+  color: #888;
+
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
+
+/* ===== ROW ===== */
+
+.topic-row {
+  display: grid;
+  grid-template-columns: 40px 1fr 1.5fr 60px;
+  gap: 16px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.topic-row input {
+  width: 100%;
+}
+
+/* ===== DELETE ICON ===== */
+
+.delete-icon {
+  cursor: pointer;
+  color: #ff4d4f;
+  text-align: center;
+}
+
+/* ===== ATTACHMENTS ===== */
+
+.attachments {
+  grid-column: 2 / span 3;
+  font-size: 12px;
+  color: #999;
+  margin-top: 8px;
+}
+
+.attachments p {
+  margin-bottom: 2px;
+}
+
+.add-attachment {
+  color: #155DFC;
+  cursor: pointer;
+  display: block;
+  margin-top: 3px;
+}
+
+.topic-header {
+  display: grid;
+  grid-template-columns: 40px 1fr 1.5fr 60px;
+  gap: 16px;
+  font-size: 13px;
+  color: #888;
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
+
+.topic-row {
+  display: grid;
+  grid-template-columns: 40px 1fr 1.5fr 60px;
+  gap: 16px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.attachments {
+  margin-left: 56px;
+  margin-top: 6px;
+}
+
+.attachments p {
+  font-size: 12px;
+  color: #999;
+}
+
+.add-attachment {
+  font-size: 13px;
+  color: #155DFC;
+  cursor: pointer;
+}
