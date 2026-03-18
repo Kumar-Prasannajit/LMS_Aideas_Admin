@@ -1,11 +1,3 @@
-/* ACTIONS */
-.top-actions {
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-  margin-bottom: 16px;
-}
-
 .btn-primary {
   background: #155DFC;
   color: #fff;
@@ -23,7 +15,7 @@
   border-radius: 8px;
 }
 
-/* TABLE */
+
 .user-table {
   width: 100%;
   border-collapse: collapse;
@@ -35,6 +27,10 @@
   border: 1px solid #e5e7eb;
   padding: 12px;
   text-align: left;
+}
+
+.user-table th:nth-child(3) {
+  text-align: center;
 }
 
 .user-table th {
@@ -49,11 +45,11 @@
 
 .delete {
   color: red;
-  text-align: center;
+  text-align: center !important;
   cursor: pointer;
 }
 
-/* PAGINATION */
+
 .pagination {
   display: flex;
   gap: 6px;
@@ -67,7 +63,7 @@
   cursor: pointer;
 }
 
-/* EMAIL SECTION */
+
 .email-section label {
   font-weight: 600;
 }

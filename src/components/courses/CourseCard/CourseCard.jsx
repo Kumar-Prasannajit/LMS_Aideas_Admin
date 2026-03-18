@@ -1,27 +1,24 @@
 import "./CourseCard.css"
 import { useNavigate } from "react-router-dom"
 
-function CourseCard({ course }) {
+function CourseCard({ course, view = "grid" }) {
 
   const navigate = useNavigate()
 
-  return(
+  return (
 
     <div
-      className="course-card"
+      className={`course-card ${view}`}
       onClick={() => navigate(`/courses/${course.id}`)}
     >
 
       <img src={course.image} alt="" />
 
       <div className="course-content">
-
-        <h4>{course.title}</h4>
-
-        <p>{course.description}</p>
-
-        <span>
-          Last Update by username <br/>
+        <h4 className="course-title">{course.title}</h4>
+        <p className="course-desc">{course.description}</p>
+        <span className="course-meta">
+          Last Update by username <br />
           Date: {course.updatedAt}
         </span>
 

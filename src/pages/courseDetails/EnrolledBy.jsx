@@ -9,14 +9,6 @@ function EnrolledBy() {
 
   return (
     <div className="enrolled">
-
-      {/* ACTION BUTTONS */}
-      <div className="top-actions">
-        <button className="btn-primary">Export</button>
-        <button className="btn-outline">Access Activity History</button>
-      </div>
-
-      {/* TABLE */}
       <table className="user-table">
 
         <thead>
@@ -39,14 +31,14 @@ function EnrolledBy() {
 
       </table>
 
-      {/* PAGINATION */}
+      
       <div className="pagination">
         <button>{"<"}</button>
         {[1,2,3,4,5,6].map(n => <button key={n}>{n}</button>)}
         <button>{">"}</button>
       </div>
 
-      {/* EMAIL INPUT */}
+      
       <div className="email-section">
 
         <label>Email*</label>

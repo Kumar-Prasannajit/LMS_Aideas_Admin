@@ -1,13 +1,14 @@
-/* ===== LAYOUT ===== */
+
 
 .course-page {
   display: flex;
   gap: 24px;
   padding: 24px 80px;
   align-items: flex-start;
+  height: calc(100vh - 100px);
 }
 
-/* SIDEBAR */
+
 
 .sidebar {
   width: 240px;
@@ -31,7 +32,7 @@
   font-weight: 500;
 }
 
-/* MAIN CONTENT */
+
 
 .course-main {
   flex: 1;
@@ -42,7 +43,7 @@
   width: 100%;
 }
 
-/* ===== HEADER ===== */
+
 
 .course-header {
   display: flex;
@@ -67,7 +68,7 @@
   margin-top: 4px;
 }
 
-/* BUTTONS */
+
 
 .back-btn {
   padding: 6px 10px;
@@ -86,29 +87,35 @@
   cursor: pointer;
 }
 
-/* ===== TABS ===== */
+.tabs-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
 
 .tabs {
   display: flex;
-  gap: 24px;
+  gap: 28px;
   border-bottom: 1px solid #eee;
-  margin-bottom: 20px;
 }
 
 .tabs span {
   padding-bottom: 10px;
   cursor: pointer;
-  color: #666;
+  color: #6b7280;
   font-size: 14px;
 }
 
 .tabs .active {
-  color: #155DFC;
-  border-bottom: 2px solid #155DFC;
-  font-weight: 500;
+  color: #2563EB;
+  border-bottom: 2px solid #2563EB;
 }
 
-/* ===== MODULE CARD ===== */
+.tab-actions {
+  display: flex;
+  gap: 10px;
+}
 
 .module-card {
   width: 100%;
@@ -119,7 +126,7 @@
   margin-top: 20px;
 }
 
-/* HEADER */
+
 
 .module-header {
   display: flex;
@@ -143,7 +150,7 @@
   cursor: pointer;
 }
 
-/* ===== MODULE TITLE ===== */
+
 
 .module-title-row {
   margin-top: 15px;
@@ -165,7 +172,7 @@
   flex: 1;
 }
 
-/* ===== INPUTS ===== */
+
 
 input {
   width: 100%;
@@ -176,7 +183,7 @@ input {
   font-size: 14px;
 }
 
-/* ===== TABLE HEADER ===== */
+
 
 .topic-header {
   display: grid;
@@ -192,7 +199,7 @@ input {
   margin-bottom: 6px;
 }
 
-/* ===== ROW ===== */
+
 
 .topic-row {
   display: grid;
@@ -206,7 +213,7 @@ input {
   width: 100%;
 }
 
-/* ===== DELETE ICON ===== */
+
 
 .delete-icon {
   cursor: pointer;
@@ -214,7 +221,7 @@ input {
   text-align: center;
 }
 
-/* ===== ATTACHMENTS ===== */
+
 
 .attachments {
   grid-column: 2 / span 3;

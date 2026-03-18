@@ -4,7 +4,6 @@ import { useState } from "react"
 import { courses } from "../../data/courseData.js"
 
 import CourseCard from "../../components/courses/CourseCard/CourseCard.jsx"
-import CourseListItem from "../../components/courses/CourseList/CourseList.jsx"
 import AdminLayout from "../../layout/AdminLayout/AdminLayout.jsx"
 
 function Courses() {
@@ -29,7 +28,7 @@ function Courses() {
         </div>
 
         <div className="courses-controls">
-          {/* Left Child: Search Only */}
+
           <div className="controls-left">
             <div className="search-container">
               <svg className="search-icon" width="20" height="20" viewBox="0 0 20 20">
@@ -39,7 +38,7 @@ function Courses() {
             </div>
           </div>
 
-          {/* Right Child: Filter and View Toggle */}
+
           <div className="controls-right">
             <div className="filter-pill">
               <div className="filter-left">
@@ -77,9 +76,7 @@ function Courses() {
         <div className={view === "grid" ? "grid-view" : "list-view"}>
 
           {courses.map(course => (
-            view === "grid"
-              ? <CourseCard key={course.id} course={course} />
-              : <CourseListItem key={course.id} course={course} />
+            <CourseCard key={course.id} course={course} view={view} />
           ))}
 
         </div>

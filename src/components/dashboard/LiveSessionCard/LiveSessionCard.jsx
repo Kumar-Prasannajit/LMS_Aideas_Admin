@@ -11,7 +11,7 @@ function LiveSessionCard(){
 
     <div className="live-session">
 
-      {/* LEFT SIDE */}
+      
 
       <div className="live-left">
 
@@ -50,7 +50,7 @@ function LiveSessionCard(){
       </div>
 
 
-      {/* RIGHT SIDE */}
+      
 
       <div className="live-right">
 

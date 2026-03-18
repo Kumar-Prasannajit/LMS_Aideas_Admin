@@ -149,12 +149,12 @@
   position: relative;
 }
 
-/* The Direct Splitter (Vertical Line) */
+
 .toggle-item:first-child {
-  border-right: 1px solid #eee; /* This is your permanent divider */
+  border-right: 1px solid #eee; 
 }
 
-/* Active State: Just changes the background to that light grey */
+
 .toggle-item.active {
   background-color: #e8e8e8; 
 }

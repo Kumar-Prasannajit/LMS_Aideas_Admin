@@ -37,7 +37,7 @@ function CourseDetails() {
 
                 <div className="course-main">
 
-                    {/* HEADER */}
+
                     <div className="course-header">
 
                         <div>
@@ -45,46 +45,65 @@ function CourseDetails() {
                             <p className="breadcrumb">Admin / Courses / Modules</p>
                         </div>
 
-                        <button className="add-module-btn">
-                            Add New Module
-                        </button>
+                    </div>
+
+
+                    <div className="tabs-header">
+
+                        {/* LEFT: TABS */}
+                        <div className="tabs">
+
+                            <span
+                                onClick={() => setActiveTab("details")}
+                                className={activeTab === "details" ? "active" : ""}
+                            >
+                                Details
+                            </span>
+
+                            <span
+                                onClick={() => setActiveTab("modules")}
+                                className={activeTab === "modules" ? "active" : ""}
+                            >
+                                Modules
+                            </span>
+
+                            <span
+                                onClick={() => setActiveTab("enrolled")}
+                                className={activeTab === "enrolled" ? "active" : ""}
+                            >
+                                Enrolled By
+                            </span>
+
+                            <span
+                                onClick={() => setActiveTab("settings")}
+                                className={activeTab === "settings" ? "active" : ""}
+                            >
+                                Settings
+                            </span>
+
+                        </div>
+
+                        {/* RIGHT: ACTION BUTTONS */}
+                        <div className="tab-actions">
+
+                            {activeTab === "modules" && (
+                                <button className="add-module-btn">
+                                    Add New Module
+                                </button>
+                            )}
+
+                            {activeTab === "enrolled" && (
+                                <>
+                                    <button className="btn-primary">Export</button>
+                                    <button className="btn-outline">Access Activity History</button>
+                                </>
+                            )}
+
+                        </div>
 
                     </div>
 
-                    {/* TABS (FIXED) */}
-                    <div className="tabs">
 
-                        <span
-                            onClick={() => setActiveTab("details")}
-                            className={activeTab === "details" ? "active" : ""}
-                        >
-                            Details
-                        </span>
-
-                        <span
-                            onClick={() => setActiveTab("modules")}
-                            className={activeTab === "modules" ? "active" : ""}
-                        >
-                            Modules
-                        </span>
-
-                        <span
-                            onClick={() => setActiveTab("enrolled")}
-                            className={activeTab === "enrolled" ? "active" : ""}
-                        >
-                            Enrolled By
-                        </span>
-
-                        <span
-                            onClick={() => setActiveTab("settings")}
-                            className={activeTab === "settings" ? "active" : ""}
-                        >
-                            Settings
-                        </span>
-
-                    </div>
-
-                    {/* CONDITIONAL RENDER */}
 
                     {activeTab === "modules" && (
                         courseModules.map(module => (

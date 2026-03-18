@@ -33,7 +33,7 @@ function Dashboard() {
 
         {dashboardStats.map((stat) => {
 
-          // Map the imported string types to actual icons and colors
+          
           let iconImg, borderColor, iconBg, bgColor;
 
           switch (stat.type) {

@@ -1,31 +1,31 @@
 :root{
 
-  /* Primary colors */
+  
   --color-primary:#3B6EF5;
   --color-text:#1f1f1f;
   --color-muted:#777777;
 
-  /* Stat card border colors */
+  
   --border-purple:#E9D8FD;
   --border-orange:#FFD9B5;
   --border-blue:#D6E4FF;
   --border-green:#D6F5E3;
 
-  /* Icon background */
+  
   --icon-purple:#F4EDFF;
   --icon-orange:#FFF2E5;
   --icon-blue:#EEF5FF;
   --icon-green:#ECFFF3;
 
-  /* Radius */
+  
   --radius-card:20px;
   --radius-badge:20px;
   --radius-button:10px;
 
-  /* Shadows */
+  
   --shadow-soft:0px 10px 25px rgba(0,0,0,0.06);
 
-  /* Font sizes */
+  
   --font-sm:12px;
   --font-md:14px;
   --font-lg:18px;

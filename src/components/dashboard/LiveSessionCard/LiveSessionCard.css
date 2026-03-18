@@ -9,10 +9,10 @@
   justify-content:space-between;
   align-items:center;
 
-  position:relative; /* important */
+  position:relative; 
 }
 
-/* LEFT SECTION */
+
 
 .live-left{
 
@@ -47,7 +47,7 @@
 
 }
 
-/* TEXT */
+
 
 .live-info h4{
   font-size:16px;
@@ -69,7 +69,7 @@
 
 }
 
-/* META INFO */
+
 
 .live-meta{
   display:flex;
@@ -87,7 +87,7 @@
   height:14px;
 }
 
-/* RIGHT SIDE */
+
 
 .live-right{
 
@@ -105,7 +105,7 @@
 
   position:absolute;
 
-  top:-8px;      /* pushes badge outside the card */
+  top:-8px;      
   right:20px;
 
   background:#BA2020;
