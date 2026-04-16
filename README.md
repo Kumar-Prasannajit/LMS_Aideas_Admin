@@ -47,7 +47,7 @@ http://localhost:5173
 
 * React (Vite)
 * React Router DOM
-* CSS
+* Tailwind CSS
 
 ---
 

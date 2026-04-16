@@ -21,7 +21,6 @@ import {
   upcomingSchedule
 } from "../../data/dashboardData"
 
-import "./Dashboard.css"
 
 function Dashboard() {
 
@@ -29,11 +28,10 @@ function Dashboard() {
 
     <AdminLayout>
 
-      <div className="stats-container">
+      <div className="flex justify-between gap-[20px] mx-auto mb-[30px] max-w-[80%]">
 
         {dashboardStats.map((stat) => {
 
-          
           let iconImg, borderColor, iconBg, bgColor;
 
           switch (stat.type) {
@@ -70,7 +68,7 @@ function Dashboard() {
               title={stat.title}
               value={stat.value}
               badgeText={stat.badge}
-              icon={<img src={iconImg} alt={stat.type} width="22" />}
+              icon={<img src={iconImg} alt={stat.type} className="w-[22px]" />}
               borderColor={borderColor}
               iconBg={iconBg}
               bgColor={bgColor}
@@ -80,7 +78,7 @@ function Dashboard() {
 
       </div>
 
-      <div className="dashboard-grid">
+      <div className="grid grid-cols-2 gap-[20px] mt-[30px] [&_canvas]:max-h-[200px]">
 
         <Card title="Live Sessions" action="View all">
 
@@ -107,7 +105,7 @@ function Dashboard() {
 
       </div>
 
-      <div className="dashboard-grid">
+      <div className="grid grid-cols-2 gap-[20px] mt-[30px] [&_canvas]:max-h-[200px]">
 
         <Card title="Assessments Graph">
           <AssessmentChart />

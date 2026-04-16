@@ -1,7 +1,5 @@
 import Navbar from "../Navbar/Navbar"
 
-import "./AdminLayout.css"
-
 function AdminLayout({children}){
 
   return(
@@ -10,7 +8,7 @@ function AdminLayout({children}){
     
       <Navbar/>
 
-      <main className="layout-container">
+      <main className="max-w-[1200px] mx-auto px-[30px] py-[20px]">
 
         {children}
 
